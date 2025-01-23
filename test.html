@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Store</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <button class="cart-button" onclick="toggleCart()">
+        🛒
+        <span id="cartCount" class="cart-count">0</span>
+    </button>
+    
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cartContent"></div>
+    </div>
+    <div class="container">
+
+        <div id="previewModal" class="modal">
+            <div class="modal-content preview-content">
+                <button class="close-preview" onclick="closePreview()">×</button>
+                <div id="previewContent"></div>
+            </div>
+        </div>
+        <div class="album-details" id="albumDetails">
+            <!-- aici adaug div urile pentru albume -->
+            <div class="loading-spinner" id="loadingSpinner">Loading...</div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

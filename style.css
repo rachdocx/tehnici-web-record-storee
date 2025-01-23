@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(108, 90, 63);
+    font-size: 16px;
+}
+.titlu2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 4em;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.title {
+    display: flex;              
+    align-items: center;        
+    gap: 15px;                  
+    padding: 10px;               
+}
+.info{
+    padding-left: 1%;
+}
+.text-info .h1{
+    font-size: 4em;
+}
+.logo {
+    width: 100px;                
+    height: auto;                
+    display: inline-block;      
+    vertical-align: middle;      
+}
+.info .text-info h1 {
+    font-size: 5em;
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+    text-shadow: 6px 6px 6px rgb(56, 55, 55)
+}
+.info .text-info h2 {
+    font-size: 3em;
+    font-family: "Roboto Slab", serif;
+    color: #a19f9f;
+}
+
+.info .text-info p {
+    font-size: 1.5em;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: "Roboto Slab", serif;
+}
+.titlu {
+    font-size: 3em;             
+    font-family: 'Vintage', sans-serif; 
+    display: inline-block;       
+    color: white;               
+}
+li{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+}
+.navbar {
+    background-color: rgb(57, 47, 33); 
+    color: white;              
+    position: fixed;       
+    top: 0;               
+    left: 0;
+    width: 100%;           
+    z-index: 1000;       
+    margin: 0;
+}
+.navbartext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-info{
+    width: 100%;
+    padding: 5%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left; 
+}
+.navbar h1 {
+    margin-left: 20px;
+}
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+.navbar li a {
+    color: white;
+    padding: 10px;
+}
+.navbar li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+/* shop albume hot rn */
+.vinyl-shop {
+    background-color: rgb(108, 90, 63);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 2em;
+}
+.vinyl-shop img{
+    opacity: calc(50%);
+}
+.vinyl-shop img:hover{
+    transform: scale(1.1); 
+    opacity: calc(100%);
+}
+.vinyl-shop figure {
+    display: inline-block;
+    width: 300px; 
+    text-align: center;
+}
+.vinyl-shop .record-cover figcaption a{
+    font-size: 1.5em; 
+    color: #0c0505; 
+    text-align: center; 
+    margin-top: 4em; 
+    width: 100%; 
+    text-decoration: none;
+}
+.vinyl-shop .record-cover figcaption {
+    margin-top: 2em; 
+}
+.content {
+    margin-top: 80px; 
+    padding: 20px;
+}
+/* dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  button{
+    border:none;
+    border-radius:5px;
+    padding:15px 30px;
+    font-size:18px;
+  }
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+  .dropdown-options a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+  }
+  
+  .dropdown-options a:hover {
+    color: #0a0a23;
+    background-color: #ddd;
+    border-radius:5px;
+  }
+  /* informatii informale despre magazin */
+  .info{
+    background-color: rgb(163, 119, 67);
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .vinyl-info {
+    width: 100%;
+    height: 1000px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    overflow: hidden; 
+  }
+/* animatie ptr informatii */
+  .vinyl-info img {
+    width: 900px;
+    height: 900px;
+    position: absolute; 
+    animation: rotate 5s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+  }
+/* artisti populari carora le apare numele la hover */
+.scroll-box-artists .scroll-box-wrapper-artisti .artist .text{
+    font-size: 40px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.popular-artist{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 4em;
+    padding-left: 3%;
+}
+.artist{
+    position: relative;
+    text-align: center;
+}
+.artist:hover .text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+}
+ .text{
+    display: none;
+    font-size: 1.5em;
+}
+.scroll-box-artists{
+    width: 100%; 
+    max-width: 100%; 
+    height: 440px; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: nowrap; 
+}
+.scroll-box-wrapper-artisti {
+    display: grid;
+    grid-template-rows: repeat(1, 300px); 
+    grid-auto-flow: column; 
+    gap: 10px; 
+}
+.scroll-box-wrapper-artisti img {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+.scroll-box-wrapper-artisti img:hover{
+    filter: brightness(50%);
+} 
+img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+/* footer/contact*/
+footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    padding: 2%;
+    gap: 3em;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    
+}
+/* informatii formale */
+.our-mission{
+    display: flex;
+    gap: 7em;
+    padding-left: 5em;
+    padding-right: 2em;
+}
+.textom{
+    display: flex;
+    gap: 5em;
+
+}
+.textom img{
+    width: 60px; 
+    height: 60px;
+}
+
+.textom p{
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: "Roboto Slab", serif;
+}
+.ourmissiontitle{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 4em;
+    padding: 5%;
+}
+/* bara anunturi */
+.bara {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: rgb(44, 31, 2);
+}
+.bara span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: bara 10s linear infinite;
+}
+@keyframes bara {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* animatie afisaj albume*/
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #302304;
+    border: 3px solid #8d5005;
+    margin-top: 15em; 
+    height: 165px; 
+    z-index: 1000;
+
+}
+.scroll-content {
+    display: flex;
+    width: 100%;
+    animation: scroll-left 20s linear infinite; 
+}
+.image-row {
+    display: flex;
+    flex-direction: row; 
+}
+.image-row img {
+    width: 150px; 
+    height: 150px;
+    margin: 5px;
+}
+.image-row img:hover {
+    transform: scale(1.2); 
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-info {
+        padding: 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .text-info h1 {
+        font-size: 2.5em;
+    }
+
+    .text-info h2 {
+        font-size: 2em;
+    }
+
+    .scroll-box-artists {
+        height: auto;
+        flex-direction: column;
+        overflow-x: visible;
+        overflow-y: auto;
+    }
+
+    .scroll-box-wrapper-artisti {
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    .scroll-box-wrapper-artisti img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .vinyl-shop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vinyl-shop figure {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .our-mission {
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        gap: 2em;
+    }
+
+    .textom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .text-info h1 {
+        font-size: 2em;
+    }
+
+    .text-info h2 {
+        font-size: 1.5em;
+    }
+
+    .scroll-box-wrapper-artisti img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .vinyl-shop figure {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-form {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #discount-timer {
+        position: static;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+
+/* Additional improvements for small screens */
+@media screen and (max-width: 350px) {
+    .navbar h1 {
+        font-size: 1.2em;
+    }
+
+    .scroll-box-wrapper-artisti img {
+        width: 180px;
+        height: 180px;
+    }
+}
+/* Stiluri pentru formulare */
+.contact-form {
+    background-color: rgb(57, 47, 33);
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: "Roboto Slab", serif;
+}
+
+.contact-form h3 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: rgb(108, 90, 63);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: rgb(163, 119, 67);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: rgb(163, 119, 67);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: rgb(139, 101, 57);
+}
+
+/* Stiluri pentru etichetele de reducere */
+.discount-tag {
+    background-color: #ff4646;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: "Roboto Slab", serif;
+}
+
+/* Timer pentru reduceri */
+#discount-timer {
+    background-color: rgb(57, 47, 33);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.9rem;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Radio buttons și checkboxuri */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: rgb(163, 119, 67);
+}
+
+/* Mesaje de eroare */
+.error-message {
+    color: #ff4646;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-form {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    #discount-timer {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+        right: 10px;
+    }
+}

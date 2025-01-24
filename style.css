@@ -571,7 +571,6 @@ footer{
     background-color: rgb(139, 101, 57);
 }
 
-/* Stiluri pentru etichetele de reducere */
 .discount-tag {
     background-color: #ff4646;
     color: white;
@@ -584,7 +583,6 @@ footer{
     font-family: "Roboto Slab", serif;
 }
 
-/* Timer pentru reduceri */
 #discount-timer {
     background-color: rgb(57, 47, 33);
     color: white;
@@ -599,7 +597,6 @@ footer{
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Radio buttons și checkboxuri */
 .radio-group,
 .checkbox-group {
     display: flex;
@@ -621,7 +618,6 @@ input[type="checkbox"] {
     accent-color: rgb(163, 119, 67);
 }
 
-/* Mesaje de eroare */
 .error-message {
     color: #ff4646;
     font-size: 0.9rem;
@@ -629,7 +625,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .contact-form {
         margin: 1rem;
